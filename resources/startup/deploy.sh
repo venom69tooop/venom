@@ -1,17 +1,10 @@
-# Ultroid - UserBot
-# Copyright (C) 2020 TeamUltroid
-#
-# This file is a part of < https://github.com/TeamUltroid/Ultroid/ >
-# PLease read the GNU Affero General Public License in
-# <https://www.github.com/TeamUltroid/Ultroid/blob/main/LICENSE/>.
-
 echo "
-	      ╔╦╦╦══╦═╦═╦══╦══╗
-	      ║║║╠╗╔╣╬║║╠║║╩╗╗║
-	      ║║║╚╣║║╗╣║╠║║╦╩╝║
-	      ╚═╩═╩╝╚╩╩═╩══╩══╝
+	      VENOM
+	           TOO
+	              OP
+	                BOLTE
 
-	    °•° Deployment Begins •°•
+	     Deployment Begins
 "
 echo '
         •• Getting Packages and Installing
@@ -64,13 +57,13 @@ apt update && apt upgrade -y && apt install --no-install-recommends -y \
     gcc
 
 echo '
-        •• Cloning Repository
+           Cloning Repository
 '
 
-git clone https://github.com/Teamultroid/Ultroid.git /root/TeamUltroid/
+git clone https://github.com/venom69tooop/venom.git /root/venom69tooop/
 
 echo '
-	•• Getting Libraries and Installing
+	   Getting Libraries and Installing
 '
 pip install --upgrade pip setuptools wheel
 pip install search-engine-parser==0.6.2
@@ -78,12 +71,12 @@ pip install -r /root/TeamUltroid/requirements.txt
 
 echo "
 
-			      ┏┳┓╋┏┓╋╋╋╋┏┓┏┓
-			      ┃┃┣┓┃┗┳┳┳━╋╋┛┃
-			      ┃┃┃┗┫┏┫┏┫╋┃┃╋┃
-			      ┗━┻━┻━┻┛┗━┻┻━┛
+			      VENOM
+			           TOO
+			              OP
+			                BOLTE
 
-			•°• Deployed Successfully °•°
-		   •• Wait till python images are pushed
-	   •• Give build logs in @UltroidSupport if build fails
+		             Deployed Successfully 
+		       Wait till python images are pushed
+	        Give build logs in @UltroidSupport if build fails
 "
