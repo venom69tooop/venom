@@ -3,7 +3,7 @@
     "description": "Pluggable telegram userbot, made in python using Telethon.",
     "logo": "https://telegra.ph/file/5793fcc67623ef4986f2e.jpg",
     "keywords": ["Telethon", "telegram", "userbot", "python"],
-    "repository": "https://github.com/venom69tooop/Ultroid",
+    "repository": "https://github.com/venom69tooop/venom",
     "website": "https://venom.netlify.app/",
     "success_url": "https://t.me/officialteamerror",
     "stack": "container",
