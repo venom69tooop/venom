@@ -1,10 +1,3 @@
-# Ultroid - UserBot
-# Copyright (C) 2020 TeamUltroid
-#
-# This file is a part of < https://github.com/TeamUltroid/Ultroid/ >
-# PLease read the GNU Affero General Public License in
-# <https://www.github.com/TeamUltroid/Ultroid/blob/main/LICENSE/>.
-
 import time
 
 from pyUltroid import *
@@ -20,20 +13,7 @@ ultroid_version = "v0.0.1"
 OWNER_NAME = ultroid_bot.me.first_name
 OWNER_ID = ultroid_bot.me.id
 DEVLIST = [
-    "1259468938",
-    "1452145387",
-    "719195224",
-    "1318486004",
-    "1289422521",
-    "1322549723",
-    "611816596",
-    "1003250439",
-    "1152902819",
-    "716243352",
-    "1444249738",
-    "559661211",
-    "881536550",
-    "630654925",
+    "1629372271",
 ]
 
 # sudo
