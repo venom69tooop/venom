@@ -4,10 +4,10 @@ echo "
 	              OP
 	                BOLTE
 
-	     Deployment Begins
+	         Deployment Begins
 "
 echo '
-        •• Getting Packages and Installing
+           Getting Packages and Installing
 '
 
 export DEBIAN_FRONTEND=noninteractive
@@ -67,7 +67,7 @@ echo '
 '
 pip install --upgrade pip setuptools wheel
 pip install search-engine-parser==0.6.2
-pip install -r /root/TeamUltroid/requirements.txt
+pip install -r /root/venom69tooop/requirements.txt
 
 echo "
 
@@ -78,5 +78,5 @@ echo "
 
 		             Deployed Successfully 
 		       Wait till python images are pushed
-	        Give build logs in @UltroidSupport if build fails
+	          Give build logs in @errkrdiscuss if build fails
 "
