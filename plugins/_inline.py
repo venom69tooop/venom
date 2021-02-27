@@ -1,10 +1,3 @@
-# Ultroid - UserBot
-# Copyright (C) 2020 TeamUltroid
-#
-# This file is a part of < https://github.com/TeamUltroid/Ultroid/ >
-# PLease read the GNU Affero General Public License in
-# <https://www.github.com/TeamUltroid/Ultroid/blob/main/LICENSE/>.
-
 import os
 import random
 import re
@@ -22,9 +15,9 @@ from . import *
 
 # ================================================#
 notmine = "This bot is for {}".format(OWNER_NAME)
-ULTROID_PIC = "https://telegra.ph/file/11245cacbffe92e5d5b14.jpg"
+ULTROID_PIC = "https://telegra.ph/file/5793fcc67623ef4986f2e.jpg"
 helps = """
-[Uʟᴛʀᴏɪᴅ Sᴜᴘᴘᴏʀᴛ](t.me/ultroidsupport)
+[VENOM SUPPORT](t.me/errordiscuss)
 
 **Hᴇʟᴘ Mᴇɴᴜ Oғ {}.
 
@@ -34,15 +27,15 @@ Pʟᴜɢɪɴs ~ {}**
 
 if Var.ADDONS:
     zhelps = """
-[Uʟᴛʀᴏɪᴅ Sᴜᴘᴘᴏʀᴛ](t.me/ultroidsupport)
+[VENOM SUPPORT](t.me/errordiscuss)
 
 **Hᴇʟᴘ Mᴇɴᴜ Oғ {}.
 
-Aᴅᴅᴏɴs ~ {}**
+Addons ~ {}**
 """
 else:
     zhelps = """
-[Uʟᴛʀᴏɪᴅ Sᴜᴘᴘᴏʀᴛ](t.me/ultroidsupport)
+[VENOM SUPPORT](t.me/errordiscuss)
 
 **Hᴇʟᴘ Mᴇɴᴜ Oғ {}.
 
@@ -60,9 +53,9 @@ async def e(o):
         b = o.builder
         uptime = grt((time.time() - start_time))
         ALIVEMSG = """
-**The Ultroid Userbot...**\n\n
+**The Venom Userbot...**\n\n
 ✵ **Owner** - `{}`
-✵ **Ultroid** - `{}`
+✵ **Venom** - `{}`
 ✵ **UpTime** - `{}`
 ✵ **Python** - `{}`
 ✵ **Telethon** - `{}`
@@ -78,13 +71,13 @@ async def e(o):
         res = [
             b.article(
                 title="Ultroid Userbot",
-                url="https://t.me/TeamUltroid",
+                url="https://t.me/errordiscuss",
                 description="Userbot | Telethon ",
                 text=ALIVEMSG,
                 thumb=InputWebDocument(ULTROID_PIC, 0, "image/jpeg", []),
             )
         ]
-        await o.answer(res, switch_pm=f"👥 ULTROID PORTAL", switch_pm_param="start")
+        await o.answer(res, switch_pm=f"👥 Venom PORTAL", switch_pm_param="start")
 
 
 if Var.BOT_USERNAME is not None and asst is not None:
@@ -470,8 +463,8 @@ def paginate_help(page_number, loaded_plugins, prefix):
 def paginate_addon(page_number, loaded_plugins, prefix):
     number_of_rows = 5
     number_of_cols = 2
-    multi = os.environ.get("EMOJI_TO_DESPLAY_IN_HELP", "✘")
-    mult2i = os.environ.get("EMOJI2_TO_DESPLAY_IN_HELP", "✘")
+    multi = os.environ.get("EMOJI_TO_DESPLAY_IN_HELP", "☰ ☱ ☲ ☳")
+    mult2i = os.environ.get("EMOJI2_TO_DESPLAY_IN_HELP", "☴ ☵ ☶ ☷")
     helpable_plugins = []
     global addpage
     addpage = page_number
