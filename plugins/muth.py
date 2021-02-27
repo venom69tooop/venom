@@ -57,3 +57,4 @@ async def _(ult):
         
             await event.edit(animation_chars[i % 8])
 
+HELP.update({f"{__name__.split('.')[1]}": f"{__doc__.format(i=Var.HNDLR)}"})
