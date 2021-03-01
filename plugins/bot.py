@@ -69,12 +69,12 @@ async def lol(ult):
     uptime = grt((time.time() - start_time))
     header = udB.get("ALIVE_TEXT") if udB.get("ALIVE_TEXT") else "Hey,  I am alive."
     als = """
-**The Ultroid Userbot...**
+**The Venom Userbot...**
 
 **{}**
 
 ✵ **Owner** - `{}`
-✵ **Ultroid** - `{}`
+✵ **Venom** - `{}`
 ✵ **UpTime** - `{}`
 ✵ **Python** - `{}`
 ✵ **Telethon** - `{}`
