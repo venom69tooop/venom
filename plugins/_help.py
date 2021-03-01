@@ -22,12 +22,12 @@ async def ult(ult):
                 output += "\n© @VENOM69OP"
                 await eor(ult, output)
             elif plug in CMD_HELP:
-                kk = f"Plugin Name-{plug}\n\n✘ Commands Available-\n\n"
+                kk = f"Plugin Name-{plug}\n\n▶ Commands Available-\n\n"
                 kk += str(CMD_HELP[plug])
                 await eor(ult, kk)
             else:
                 try:
-                    x = f"Plugin Name-{plug}\n\n✘ Commands Available-\n\n"
+                    x = f"Plugin Name-{plug}\n\n▶ Commands Available-\n\n"
                     for d in LIST[plug]:
                         x += Var.HNDLR + d
                         x += "\n"
