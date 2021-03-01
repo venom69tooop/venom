@@ -2,11 +2,14 @@ from . import *
 
 
 
-@borg.on(admin_cmd(pattern="emoji"))
+@ultroid_cmd(
+    pattern="emoji",
+)
+async def emoji(event):
 
 
 
-async def gn(event):
+#async def gn(event):
 
 
 
@@ -209,6 +212,7 @@ async def gn(event):
    await event.edit("MADE BY VENOM OP")
 
 
+HELP.update({f"{__name__.split('.')[1]}": f"{__doc__.format(i=Var.HNDLR)}"})
 
 #made by @Venom_OP
 #cmd- .emoji
