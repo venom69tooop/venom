@@ -17,29 +17,29 @@ from . import *
 notmine = "This bot is for {}".format(OWNER_NAME)
 ULTROID_PIC = "https://telegra.ph/file/5793fcc67623ef4986f2e.jpg"
 helps = """
-[VENOM SUPPORT](t.me/errordiscuss)
+[VENOM SUPPORT](t.me/teamerrordiscuss)
 
 **Hᴇʟᴘ Mᴇɴᴜ Oғ {}.
 
-Pʟᴜɢɪɴs ~ {}**
+Pʟᴜɢɪɴs ☞ {}**
 """
 
 
 if Var.ADDONS:
     zhelps = """
-[VENOM SUPPORT](t.me/errordiscuss)
+[VENOM SUPPORT](t.me/teamerrordiscuss)
 
 **Hᴇʟᴘ Mᴇɴᴜ Oғ {}.
 
-Addons ~ {}**
+Addons ☞ {}**
 """
 else:
     zhelps = """
-[VENOM SUPPORT](t.me/errordiscuss)
+[VENOM SUPPORT](t.me/teamerrordiscuss)
 
 **Hᴇʟᴘ Mᴇɴᴜ Oғ {}.
 
-Aᴅᴅᴏɴs ~ {}
+Aᴅᴅᴏɴs ☞ {}
 
 Gᴏ Aɴᴅ Aᴅᴅ ADDON Vᴀʀ Wɪᴛʜ Vᴀʟᴜᴇ Tʀᴜᴇ**
 """
@@ -70,8 +70,8 @@ async def e(o):
         )
         res = [
             b.article(
-                title="Ultroid Userbot",
-                url="https://t.me/errordiscuss",
+                title="Venom Userbot",
+                url="https://t.me/teamerrordiscuss",
                 description="Userbot | Telethon ",
                 text=ALIVEMSG,
                 thumb=InputWebDocument(ULTROID_PIC, 0, "image/jpeg", []),
@@ -92,7 +92,7 @@ if Var.BOT_USERNAME is not None and asst is not None:
             result = builder.article(
                 title="Help Menu",
                 description="Help Menu - UserBot | Telethon ",
-                url="https://t.me/TheUltroid",
+                url="https://t.me/teamerrordiscuss",
                 thumb=InputWebDocument(ULTROID_PIC, 0, "image/jpeg", []),
                 text=f"** Bᴏᴛ Oғ {OWNER_NAME}\n\nMᴀɪɴ Mᴇɴᴜ\n\nPʟᴜɢɪɴs ~ {len(PLUGINS) - 4}\nAᴅᴅᴏɴs ~ {len(ADDONS)}**",
                 buttons=[
