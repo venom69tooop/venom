@@ -12,18 +12,19 @@ import asyncio
 
 @borg.on(events.NewMessage(pattern=r"\.(.*)", outgoing=True))
 
-@ultroid_cmd(
-    pattern="addsudo ?(.*)",
-)
-async def _(ult):
+async def _(event):
 
     if event.fwd_from:
 
         return
 
-    animation_interval = 0.2
+    animation_interval = 0.3
 
     animation_ttl = range(0, 100)
+
+    input_str = event.pattern_match.group(1)
+
+    if input_str == "muth":
 
         await event.edit(input_str)
 
@@ -57,4 +58,3 @@ async def _(ult):
         
             await event.edit(animation_chars[i % 8])
 
-HELP.update({f"{__name__.split('.')[1]}": f"{__doc__.format(i=Var.HNDLR)}"})
