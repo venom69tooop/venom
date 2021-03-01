@@ -6,14 +6,10 @@ from telethon import events
 
 import asyncio
 
-
-
-
-
 @ultroid_cmd(
     pattern="muth$",
 )
-async def cko(ult):
+async def muthal(ult):
 
     if event.fwd_from:
 
