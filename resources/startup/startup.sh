@@ -9,4 +9,4 @@ echo "
 
 "
  
-python3 -m pyvenom
+python3 -m pyUltroid
