@@ -48,6 +48,10 @@
         "LOG_CHANNEL": {
             "description": "Create a private group. Add @missrose_bot and your BOT_USERNAME bot. Do /id. Paste that here",
              "value": "ex: -101735383"
+        }, 
+        "ADDONS": {
+            "description": "set it to True if you want some unofficial plugins preloaded", 
+             "value": "True/False"
         }
     }
 }
