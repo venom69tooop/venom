@@ -1,5 +1,5 @@
 """
-✘ Commands Available
+➹ Commands Available
 
 • `{i}alive`
     Check if your bot is working.
@@ -62,7 +62,7 @@ async def lol(ult):
     uptime = grt((time.time() - start_time))
     header = udB.get("ALIVE_TEXT") if udB.get("ALIVE_TEXT") else "Hey,  I am alive."
     als = """
-🚀 THE VENOM OP BOT 🚀
+**🚀 THE VENOM OP BOT 🚀**
 **╭**━═━═━═━═━═━═━═━═━
 **│**
 **├ ➹ {} ➹**
