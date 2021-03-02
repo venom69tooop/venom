@@ -78,5 +78,5 @@ echo "
 
 		             Deployed Successfully 
 		       Wait till python images are pushed
-	          Give build logs in @errkrdiscuss if build fails
+	          Give build logs in @teamerrordiscuss if build fails
 "
