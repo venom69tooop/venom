@@ -5,7 +5,7 @@ echo "
         +-+ +-+ +-+ +-+ +-+ +-+ +-+
  
  
-      Visit @errordiscuss for updates!!
+      Visit @teamerrordiscuss for updates!!
 
 "
  
