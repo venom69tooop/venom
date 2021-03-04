@@ -87,12 +87,12 @@ async def broadcast_adder(event):
         await asyncio.sleep(3)
         await event.delete()
     elif is_channel_added(chat_id):
-        await x.edit("`Channel is already is database!`")
+        await x.edit("`Channel is already there in database!`")
         await asyncio.sleep(3)
         await event.delete()
 
 
-@ultroid_cmd(pattern="rem ?(.*)")
+@ultroid_cmd(pattern="rm ?(.*)")
 async def broadcast_remover(event):
     chat_id = event.pattern_match.group(1)
     x = await eor(event, "`Processing...`")
@@ -123,7 +123,7 @@ async def list_all(event):
     channels = get_channels()
     num = get_no_channels()
     if num == 0:
-        return await eod(x, "No chats were added.", time=5)
+        return await eod(x, "No channel's/group's found.", time=3)
     msg = "Channels in database:\n"
     for channel in channels:
         name = ""
@@ -154,7 +154,7 @@ async def forw(event):
     if event.fwd_from:
         return
     if not event.is_reply:
-        await eor(event, "Reply to a message to broadcast.")
+        await eor(event, "Reply to a message to forward.")
         return
     channels = get_channels()
     x = await eor(event, "Sending...")
@@ -270,6 +270,8 @@ async def sending(event):
                         f"Sent : {sent_count}\nError : {error_count}\nTotal : {len(channels)}",
                     )
             await x.edit(f"{sent_count} messages sent with {error_count} errors.")
+     #       chat_id = event.pattern_match.group(1)
+     #       x = await eor(event, "``")
             if error_count > 0:
                 try:
                     await ultroid_bot.send_message(
