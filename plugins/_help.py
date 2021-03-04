@@ -1,3 +1,10 @@
+# Ultroid - UserBot
+# Copyright (C) 2020 TeamUltroid
+#
+# This file is a part of < https://github.com/TeamUltroid/Ultroid/ >
+# PLease read the GNU Affero General Public License in
+# <https://www.github.com/TeamUltroid/Ultroid/blob/main/LICENSE/>.
+
 from pyUltroid.dB.database import Var
 from support import *
 from telethon.errors.rpcerrorlist import BotInlineDisabledError as dis
@@ -19,17 +26,17 @@ async def ult(ult):
                 output = "**Plugin** - `{}`\n".format(plug)
                 for i in HELP[plug]:
                     output += i
-                output += "\n© @VENOM69OP"
+                output += "\n© @Venom69OP"
                 await eor(ult, output)
             elif plug in CMD_HELP:
-                kk = f"Plugin Name-{plug}\n\n▶ Commands Available-\n\n"
+                kk = f"Plugin Name-{plug}\n\n✘ Commands Available-\n\n"
                 kk += str(CMD_HELP[plug])
                 await eor(ult, kk)
             else:
                 try:
-                    x = f"Plugin Name-{plug}\n\n▶ Commands Available-\n\n"
+                    x = f"Plugin Name-{plug}\n\n✘ Commands Available-\n\n"
                     for d in LIST[plug]:
-                        x += Var.HNDLR + d
+                        x += HNDLR + d
                         x += "\n"
                     await eor(ult, x)
                 except BaseException:
@@ -43,7 +50,7 @@ async def ult(ult):
             return await eor(
                 ult,
                 "`The bot did not respond to the inline query.\nConsider using {}restart`".format(
-                    Var.HNDLR
+                    HNDLR
                 ),
             )
         except dis:
