@@ -147,6 +147,8 @@ async def bban(ult):
     user, reason = await get_user_info(ult)
     if not user:
         return await xx.edit("`Reply to a user or give username to ban him!`")
+    if str(user.id) in DEVLIST:
+        return await xx.edit(" `LoL, I can't Ban my Developer 😂`")
     await xx.edit("`Getting user info...`")
     try:
         await ultroid_bot(
@@ -226,6 +228,13 @@ async def uunban(ult):
     groups_only=True,
 )
 async def kck(ult):
+    tt = ult.text
+    try:
+        tx = tt[5]
+        if tx:
+            return
+    except BaseException:
+        pass
     xx = await eor(ult, "`Processing...`")
     chat = await ult.get_chat()
     isAdmin = chat.admin_rights
@@ -235,6 +244,8 @@ async def kck(ult):
     user, reason = await get_user_info(ult)
     if not user:
         return await xx.edit("`Kick? Whom? I couldn't get his info...`")
+    if str(user.id) in DEVLIST:
+        return await xx.edit(" `Lol, I can't Kick my Developer`😂")
     await xx.edit("`Kicking...`")
     try:
         await ultroid_bot.kick_participant(ult.chat_id, user.id)
@@ -267,7 +278,7 @@ async def pin(msg):
     tt = msg.text
     try:
         kk = tt[4]
-        if kk == "g":
+        if kk:
             return
     except BaseException:
         pass
@@ -444,4 +455,4 @@ async def editer(edit):
         i = i + 1
 
 
-HELP.update({f"{__name__.split('.')[1]}": f"{__doc__.format(i=Var.HNDLR)}"})
+HELP.update({f"{__name__.split('.')[1]}": f"{__doc__.format(i=HNDLR)}"})
