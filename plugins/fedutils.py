@@ -1,10 +1,3 @@
-# Ultroid - UserBot
-# Copyright (C) 2020 TeamUltroid
-#
-# This file is a part of < https://github.com/TeamUltroid/Ultroid/ >
-# PLease read the GNU Affero General Public License in
-# <https://www.github.com/TeamUltroid/Ultroid/blob/main/LICENSE/>.
-
 """
 ✘ Commands Available -
 
@@ -25,7 +18,9 @@ Specify FBan Group and Feds to exclude in the assistant.
 
 import asyncio
 import os
+
 from telethon.errors.rpcerrorlist import YouBlockedUserError
+
 from . import *
 
 bot = "@MissRose_bot"
@@ -386,9 +381,9 @@ async def _(event):
             await conv.send_message("/fedinfo " + sysarg)
             audio = await conv.get_response()
             await ultroid.send_read_acknowledge(bot)
-            await ok.edit(audio.text + "\n\nFedInfo Excracted by Ultroid")
+            await ok.edit(audio.text + "\n\nFedInfo Extracted by Venom")
         except YouBlockedUserError:
             await ok.edit("**Error**\n `Unblock` @MissRose_Bot `and try again!")
 
 
-HELP.update({f"{__name__.split('.')[1]}": f"{__doc__.format(i=Var.HNDLR)}"})
+HELP.update({f"{__name__.split('.')[1]}": f"{__doc__.format(i=HNDLR)}"})
