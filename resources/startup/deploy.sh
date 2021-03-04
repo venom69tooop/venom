@@ -1,13 +1,13 @@
 echo "
-	      VENOM
-	           TOO
-	              OP
-	                BOLTE
+      VENOM
+           TOO
+	      OP
+	        BOLTE
 
-	         Deployment Begins
+	    °•° Deployment Begins •°•
 "
 echo '
-           Getting Packages and Installing
+        •• Getting Packages and Installing
 '
 
 export DEBIAN_FRONTEND=noninteractive
@@ -54,16 +54,18 @@ apt update && apt upgrade -y && apt install --no-install-recommends -y \
     make \
     libopus0 \
     libopus-dev \
-    gcc
+    gcc \
+    mediainfo \
+    megatools
 
 echo '
-           Cloning Repository
+        •• Cloning Repository
 '
 
 git clone https://github.com/venom69tooop/venom.git /root/venom69tooop/
 
 echo '
-	   Getting Libraries and Installing
+	•• Getting Libraries and Installing
 '
 pip install --upgrade pip setuptools wheel
 pip install search-engine-parser==0.6.2
@@ -71,12 +73,9 @@ pip install -r /root/venom69tooop/requirements.txt
 
 echo "
 
-			      VENOM
-			           TOO
-			              OP
-			                BOLTE
+			    VENOM OP BOI 💞
 
-		             Deployed Successfully 
-		       Wait till python images are pushed
-	          Give build logs in @teamerrordiscuss if build fails
+			•°• Deployed Successfully °•°
+		   •• Wait till python images are pushed
+	   •• Give build logs in @TeamErrorDiscuss if build fails
 "
