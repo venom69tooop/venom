@@ -1,10 +1,3 @@
-# Ultroid - UserBot
-# Copyright (C) 2020 TeamUltroid
-#
-# This file is a part of < https://github.com/TeamUltroid/Ultroid/ >
-# PLease read the GNU Affero General Public License in
-# <https://www.github.com/TeamUltroid/Ultroid/blob/main/LICENSE/>.
-
 """
 ✘ Commands Available -
 
@@ -244,10 +237,10 @@ async def _(e):
     pattern="bash",
 )
 async def _(event):
-    if (Var.I_DEV if Var.I_DEV else Redis("I_DEV")) != "True":
+    if Redis("I_DEV") != "True":
         await eor(
             event,
-            "Developer Restricted!\nIf you know what this does, and want to proceed\n\n set var `I_DEV` as `True`\n\nThis Might Be Dangerous.",
+            f"Developer Restricted!\nIf you know what this does, and want to proceed\n\n `{HNDLR}setredis I_DEV True`\n\nThis Might Be Dangerous.",
         )
         return
     xx = await eor(event, "`Processing...`")
@@ -295,10 +288,10 @@ async def _(event):
     pattern="eval",
 )
 async def _(event):
-    if (Var.I_DEV if Var.I_DEV else Redis("I_DEV")) != "True":
+    if Redis("I_DEV") != "True":
         await eor(
             event,
-            "Developer Restricted!\nIf you know what this does, and want to proceed\n\n set var `I_DEV` as `True`\n\nThis Might Be Dangerous.",
+            f"Developer Restricted!\nIf you know what this does, and want to proceed\n\n `{HNDLR}setredis I_DEV True`\n\nThis Might Be Dangerous.",
         )
         return
     xx = await eor(event, "`Processing ...`")
@@ -412,4 +405,4 @@ async def lastname(steal):
         return await lol.edit("Error: @SangMataInfo_bot is not responding!.")
 
 
-HELP.update({f"{__name__.split('.')[1]}": f"{__doc__.format(i=Var.HNDLR)}"})
+HELP.update({f"{__name__.split('.')[1]}": f"{__doc__.format(i=HNDLR)}"})
